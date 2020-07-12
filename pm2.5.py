@@ -25,4 +25,10 @@ def main():
     cityPY = p.get_pinyin(cityZH,'')
     url = f'http://www.pm25x.com/city/{cityPY}.htm'
     print(cityZH,'PM2.5:',cityDetail(url))
-main()
+
+if __name__ == "__main__":
+    while True:
+        try:
+            main()
+        except:
+            traceback.print_exc()
