@@ -20,7 +20,7 @@ def cityDetail(url):
     return digit[0].text
 
 def main():
-    cityZH = input('要查询的城sssss市名称：')
+    cityZH = input('要查询的城市名称：')
     p = Pinyin()
     cityPY = p.get_pinyin(cityZH,'')
     url = f'http://www.pm25x.com/city/{cityPY}.htm'
